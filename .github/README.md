@@ -19,10 +19,10 @@
 </p>
 
 <h3 align="center">
-    ─「 ᴅᴇᴩʟᴏʏ ᴏɴ ʜᴇʀᴏᴋᴜ 」─
+    ─「 ᴍʀxʙʀᴏᴋᴇɴ 」─
 </h3>
 
-<p align="center"><a href="https://dashboard.heroku.com/new?template=https://github.com/Asad0111/AnonXMusic"> <img src="https://img.shields.io/badge/teri maa ki chut MARWA ISSE%20On%20Heroku-black?style=for-the-badge&logo=MRXBROKEN" width="220" height="38.45"/></a></p>
+<p align="center"><a href="https://dashboard.heroku.com/new?template=https://github.com/Asad0111/AnonXMusic"> <img src="https://img.shields.io/badge/MRXBROKEN%20On%20Heroku-black?style=for-the-badge&logo=MRXBROKEN" width="220" height="38.45"/></a></p>
 
 <h3 align="center">
     ─「 ᴅᴇᴩʟᴏʏ ᴏɴ ʟᴏᴄᴀʟ ʜᴏsᴛ/ ᴠᴘs 」─
@@ -67,5 +67,3 @@ Press `Ctrl+C` when you're done with editing env and `:wq` to save the env<br>
 <p align="center">
 <a href="https://telegram.me/aboutbrokenx"><img src="https://img.shields.io/badge/-Support%20Channel-blue.svg?style=for-the-badge&logo=Telegram"></a>
 </p>
-
-
