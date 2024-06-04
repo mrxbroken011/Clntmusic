@@ -1,4 +1,5 @@
 from datetime import datetime
+
 from pyrogram import filters
 from pyrogram.types import Message
 
@@ -10,17 +11,18 @@ from AnonXMusic.utils.inline import supp_markup
 from config import BANNED_USERS, PING_IMG_URL
 
 
-@app.on_message(filters.command(["ping", "alive"]))
+@app.on_message(filters.command(["ping", "alive"]) & ~BANNED_USERS)
 @language
-async def ping(_, message: Message):
-    start_time = datetime.now()
-    await message.reply_text("Pong!")
-    end_time = datetime.now()
-    await Anony(
-        message,
-        text=f"🏓 **Pong!**\n\n"
-             f"🕒 {(end_time - start_time).microseconds / 1000}ms",
-        reply_markup=supp_markup(),
-        disable_web_page_preview=True
+async def ping_com(client, message: Message, _):
+    start = datetime.now()
+    response = await message.reply_photo(
+        photo=PING_IMG_URL,
+        caption=_["ping_1"].format(app.mention),
     )
-    
+    pytgping = await Anony.ping()
+    UP, CPU, RAM, DISK = await bot_sys_stats()
+    resp = (datetime.now() - start).microseconds / 1000
+    await response.edit_text(
+        _["ping_2"].format(resp, app.mention, UP, RAM, CPU, DISK, pytgping),
+        reply_markup=supp_markup(_),
+    )
