@@ -1,6 +1,8 @@
 <h2 align="center">
  
-   ──⏤͟͟͞•♡︎ ˹Sᴘᴏᴛɪғʏ˼ 🫧🕊️⃝⃝⃝⃝──
+   ──⏤͟͟͞•♡︎ ˹Sᴘᴏᴛɪғʏ˼ 🫧🕊️⃝⃝⃝⃝⃝⃝⃝⃝
+   ──
+
 
 <h1> <img src="https://te.legra.ph/file/8e43d1a66ca355ea0b7a5.jpg" height="90px" width="80px"> Hᴇʏ ᴛʜᴇʀᴇ, ᴛʜɪs ɪs ᴍʀ ʙʀᴏᴋᴇɴ </h1>
 <p align="center">
@@ -10,12 +12,15 @@
   <img src="https://telegra.ph/file/56d1760224589ee370186.jpg">
 </p>
 
+[<img src="https://github.com/mrxbroken011/brokenxnetwork/blob/master/resources/hr.gif"/>](https://github.com/mrxbroken011)
 
 </p>
 
 <p align="center">
   <img src="https://telegra.ph/file/36be820a8775f0bfc773e.jpg">
 </p>
+
+[<img src="https://github.com/mrxbroken011/brokenxnetwork/blob/master/resources/hr.gif"/>](https://github.com/mrxbroken011)
 
 <h3 align="center">
     ─「 ᴍʀxʙʀᴏᴋᴇɴ 」─
