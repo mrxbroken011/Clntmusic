@@ -19,7 +19,7 @@ def track_markup(_, videoid, user_id, channel, fplay):
         ],
         [
             InlineKeyboardButton(
-                text=_["🅰ᴅᴅ 🅼ᴇ"],
+                text=_["S_B_1"],
                 url=f"https://t.me/{app.username}?startgroup=true",
             ), 
         ],
@@ -62,7 +62,7 @@ def stream_markup_timer(_, chat_id, played, dur):
         ],                 
         [
             InlineKeyboardButton(
-                text=_["🅰ᴅᴅ 🅼ᴇ"], 
+                text=_["S_B_1"], 
                 url=f"https://t.me/{app.username}?startgroup=true",
              ), 
         ],
@@ -81,7 +81,7 @@ def stream_markup(_, chat_id):
         ],
         [
             InlineKeyboardButton(
-                text=_["🅰ᴅᴅ 🅼ᴇ"], 
+                text=_["S_B_1"], 
                 url=f"https://t.me/{app.username}?startgroup=true",
               ),
         ],
@@ -103,7 +103,7 @@ def playlist_markup(_, videoid, user_id, ptype, channel, fplay):
         ],
         [
             InlineKeyboardButton(
-                text=_["🅰ᴅᴅ 🅼ᴇ"], 
+                text=_["S_B_1"], 
                 url=f"https://t.me/{app.username}?startgroup=true",
             ),
         ],
