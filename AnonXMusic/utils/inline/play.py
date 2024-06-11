@@ -2,6 +2,8 @@ import math
 
 from pyrogram.types import InlineKeyboardButton
 
+import config
+
 from AnonXMusic.utils.formatters import time_to_seconds
 
 
@@ -19,8 +21,23 @@ def track_markup(_, videoid, user_id, channel, fplay):
         ],
         [
             InlineKeyboardButton(
-                text=_["CLOSE_BUTTON"],
-                callback_data=f"forceclose {videoid}|{user_id}",
+
+                text="😈ᴏᴡɴᴇʀ✨",
+
+                user_id=config.OWNER_ID,
+
+            ),
+            InlineKeyboardButton(
+
+                text="🖤sᴜᴘᴘᴏʀᴛ😈",
+
+                url=config.SUPPORT_CHANNEL,
+
+            ),
+        ], 
+        [
+            InlineKeyboardButton(
+                text=_["S_B_1"], url=f"https://t.me/{app.username}?startgroup=true",
             )
         ],
     ]
@@ -66,7 +83,11 @@ def stream_markup_timer(_, chat_id, played, dur):
                 callback_data="GetTimer",
             )
         ],
-        [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
+        [
+            InlineKeyboardButton(
+                text=_["S_B_1"], url=f"https://t.me/{app.username}?startgroup=true", 
+            ) 
+    ],
     ]
     return buttons
 
