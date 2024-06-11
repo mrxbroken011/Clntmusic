@@ -2,8 +2,6 @@ import math
 
 from pyrogram.types import InlineKeyboardButton
 
-import config  # Ensure is defined in config
-
 from AnonXMusic.utils.formatters import time_to_seconds
 
 
@@ -22,11 +20,11 @@ def track_markup(_, videoid, user_id, channel, fplay):
         [
             InlineKeyboardButton(
                 text="😈ᴏᴡɴᴇʀ✨",
-                url=f"tg://user?id={config.OWNER_ID}",  # Fixed here
+                url=f"https://t.me/aboutbrokenx",  # Fixed here
             ),
             InlineKeyboardButton(
                 text="🖤sᴜᴘᴘᴏʀᴛ😈",
-                url={config.SUPPORT_CHANNEL},
+                url=f"https://t.me/brokenxnetwork",
             ),
         ], 
         [
