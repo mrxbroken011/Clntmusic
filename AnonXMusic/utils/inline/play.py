@@ -26,7 +26,7 @@ def track_markup(_, videoid, user_id, channel, fplay):
             ),
             InlineKeyboardButton(
                 text="🖤sᴜᴘᴘᴏʀᴛ😈",
-                url=config.SUPPORT_CHANNEL,
+                url={config.SUPPORT_CHANNEL},
             ),
         ], 
         [
