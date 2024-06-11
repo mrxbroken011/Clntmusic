@@ -20,7 +20,7 @@ def track_markup(_, videoid, user_id, channel, fplay):
         [
             InlineKeyboardButton(
                 text=_["🅰ᴅᴅ 🅼ᴇ"],
-                callback_data=f"https://t.me/{app.username}?startgroup=true",
+                url=f"https://t.me/{app.username}?startgroup=true",
             ), 
         ],
     ]
@@ -61,8 +61,9 @@ def stream_markup_timer(_, chat_id, played, dur):
             InlineKeyboardButton(text="▢", callback_data=f"ADMIN Stop|{chat_id}"),
         ],                 
         [
-            InlineKeyboardButton(text=_["🅰ᴅᴅ 🅼ᴇ"], 
-                              callback_data=f"https://t.me/{app.username}?startgroup=true",
+            InlineKeyboardButton(
+                text=_["🅰ᴅᴅ 🅼ᴇ"], 
+                url=f"https://t.me/{app.username}?startgroup=true",
              ), 
         ],
     ]
@@ -79,8 +80,9 @@ def stream_markup(_, chat_id):
             InlineKeyboardButton(text="▢", callback_data=f"ADMIN Stop|{chat_id}"),
         ],
         [
-            InlineKeyboardButton(text=_["🅰ᴅᴅ 🅼ᴇ"], 
-                              callback_data=f"https://t.me/{app.username}?startgroup=true",
+            InlineKeyboardButton(
+                text=_["🅰ᴅᴅ 🅼ᴇ"], 
+                url=f"https://t.me/{app.username}?startgroup=true",
               ),
         ],
     ]
@@ -100,8 +102,9 @@ def playlist_markup(_, videoid, user_id, ptype, channel, fplay):
             ),
         ],
         [
-            InlineKeyboardButton(text=_["🅰ᴅᴅ 🅼ᴇ"], 
-                              callback_data=f"https://t.me/{app.username}?startgroup=true",
+            InlineKeyboardButton(
+                text=_["🅰ᴅᴅ 🅼ᴇ"], 
+                url=f"https://t.me/{app.username}?startgroup=true",
             ),
         ],
     ]
@@ -117,8 +120,9 @@ def livestream_markup(_, videoid, user_id, mode, channel, fplay):
             ),
         ],
         [
-            InlineKeyboardButton(text=_["🅰ᴅᴅ 🅼ᴇ"], 
-                              callback_data=f"https://t.me/{app.username}?startgroup=true",
+            InlineKeyboardButton(
+                text=_["🅰ᴅᴅ 🅼ᴇ"], 
+                url=f"https://t.me/{app.username}?startgroup=true",
             ),
         ],
     ]
