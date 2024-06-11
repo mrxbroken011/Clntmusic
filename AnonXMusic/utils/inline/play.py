@@ -66,7 +66,7 @@ def stream_markup_timer(_, chat_id, played, dur):
                 callback_data="GetTimer",
             )
         ],
-        [InlineKeyboardButton(text=_["😈ᴄʜᴀɴɴᴇʟ🖤"], url="https://t.me/brokenxnetwork")],
+        [InlineKeyboardButton(text=_["😈ᴄʜᴀɴɴᴇʟ🖤"], url=f"https://t.me/brokenxnetwork")],
     ]
     return buttons
 
