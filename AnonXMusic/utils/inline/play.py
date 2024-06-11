@@ -2,7 +2,7 @@ import math
 
 from pyrogram.types import InlineKeyboardButton
 
-from config import SUPPORT_CHANNEL, OWNER_ID # Ensure is defined in config
+import config  # Ensure is defined in config
 
 from AnonXMusic.utils.formatters import time_to_seconds
 
@@ -22,11 +22,11 @@ def track_markup(_, videoid, user_id, channel, fplay):
         [
             InlineKeyboardButton(
                 text="😈ᴏᴡɴᴇʀ✨",
-                url=f"tg://user?id={OWNER_ID}",  # Fixed here
+                url=f"tg://user?id={config.OWNER_ID}",  # Fixed here
             ),
             InlineKeyboardButton(
                 text="🖤sᴜᴘᴘᴏʀᴛ😈",
-                url=SUPPORT_CHANNEL,
+                url=config.SUPPORT_CHANNEL,
             ),
         ], 
         [
@@ -97,7 +97,7 @@ def stream_markup(_, chat_id):
         ],
         [
             InlineKeyboardButton(
-                text=_["S_B_1"], url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
+                text=_["S_B_1"], url=f"https://t.me/{app.username}?startgroup=true",
             ), 
         ],
     ]
