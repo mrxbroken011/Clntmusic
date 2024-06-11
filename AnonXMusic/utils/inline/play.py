@@ -38,7 +38,7 @@ def track_markup(_, videoid, user_id, channel, fplay):
         [
             InlineKeyboardButton(
                 text=_["S_B_1"], url=f"https://t.me/{app.username}?startgroup=true",
-            )
+            ), 
         ],
     ]
     return buttons
@@ -86,8 +86,8 @@ def stream_markup_timer(_, chat_id, played, dur):
         [
             InlineKeyboardButton(
                 text=_["S_B_1"], url=f"https://t.me/{app.username}?startgroup=true", 
-            ) 
-    ],
+            ), 
+        ],
     ]
     return buttons
 
@@ -101,7 +101,11 @@ def stream_markup(_, chat_id):
             InlineKeyboardButton(text="‣‣I", callback_data=f"ADMIN Skip|{chat_id}"),
             InlineKeyboardButton(text="▢", callback_data=f"ADMIN Stop|{chat_id}"),
         ],
-        [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
+        [
+            InlineKeyboardButton(
+                text=_["S_B_1"], url=f"https://t.me/{app.username}?startgroup=true",
+            ), 
+        ],
     ]
     return buttons
 
