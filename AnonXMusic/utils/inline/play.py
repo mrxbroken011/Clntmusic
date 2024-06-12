@@ -71,9 +71,10 @@ def stream_markup_timer(_, chat_id, played, dur):
                 url=f"https://t.me/+7yFRvkorUdFiZTll",
 
             ),
+       ],
+       [InlineKeyboardButton(text=_["S_B_1"], url=f"https://t.me/SpotifyxAlbot?startgroup=true",
+           ), 
         ],
-        [InlineKeyboardButton(text=_["S_B_1"], url=f"https://t.me/SpotifyxAlbot?startgroup=true",)],
-
     ]
     return buttons
 
@@ -95,14 +96,17 @@ def stream_markup(_, chat_id):
                 url=f"https://t.me/mrbrokn",
 
             ),
-            InlineKeyboardButton(
+             InlineKeyboardButton(
 
                 text="🖤sᴜᴘᴘᴏʀᴛ😈",
 
                 url=f"https://t.me/+7yFRvkorUdFiZTll",
 
             ),
-        [InlineKeyboardButton(text=_["S_B_1"], url=f"https://t.me/SpotifyxAlbot?startgroup=true")], 
+        ], 
+        [InlineKeyboardButton(text=_["S_B_1"], url=f"https://t.me/SpotifyxAlbot?startgroup=true"
+            ), 
+        ], 
     ]
     return buttons
 
