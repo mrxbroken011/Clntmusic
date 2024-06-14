@@ -17,8 +17,12 @@ def track_markup(_, videoid, user_id, channel, fplay):
                 callback_data=f"MusicStream {videoid}|{user_id}|v|{channel}|{fplay}",
             ),
         ],
-        [InlineKeyboardButton(text=_["S_B_1"], url=f"https://t.me/SpotifyxAlbot?startgroup=true")],
-            
+        [
+            InlineKeyboardButton(
+                text=_["CLOSE_BUTTON"],
+                callback_data=f"forceclose {videoid}|{user_id}",
+            )
+        ],
     ]
     return buttons
 
@@ -58,23 +62,11 @@ def stream_markup_timer(_, chat_id, played, dur):
         ],
         [
             InlineKeyboardButton(
-
-                text="😈ᴏᴡɴᴇʀ✨",
-
-                url=f"https://t.me/mrbrokn",
-
-            ),
-            InlineKeyboardButton(
-
-                text="🖤sᴜᴘᴘᴏʀᴛ😈",
-
-                url=f"https://t.me/+7yFRvkorUdFiZTll",
-
-            ),
-       ],
-       [InlineKeyboardButton(text=_["S_B_1"], url=f"https://t.me/SpotifyxAlbot?startgroup=true",
-           ), 
+                text=f"{played} {bar} {dur}",
+                callback_data="GetTimer",
+            )
         ],
+        [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
     ]
     return buttons
 
@@ -88,25 +80,7 @@ def stream_markup(_, chat_id):
             InlineKeyboardButton(text="‣‣I", callback_data=f"ADMIN Skip|{chat_id}"),
             InlineKeyboardButton(text="▢", callback_data=f"ADMIN Stop|{chat_id}"),
         ],
-        [
-            InlineKeyboardButton(
-
-                text="😈ᴏᴡɴᴇʀ✨",
-
-                url=f"https://t.me/mrbrokn",
-
-            ),
-             InlineKeyboardButton(
-
-                text="🖤sᴜᴘᴘᴏʀᴛ😈",
-
-                url=f"https://t.me/+7yFRvkorUdFiZTll",
-
-            ),
-        ], 
-        [InlineKeyboardButton(text=_["S_B_1"], url=f"https://t.me/SpotifyxAlbot?startgroup=true"
-            ), 
-        ], 
+        [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
     ]
     return buttons
 
@@ -123,8 +97,12 @@ def playlist_markup(_, videoid, user_id, ptype, channel, fplay):
                 callback_data=f"AnonyPlaylists {videoid}|{user_id}|{ptype}|v|{channel}|{fplay}",
             ),
         ],
-        [InlineKeyboardButton(text=_["S_B_1"], url=f"https://t.me/SpotifyxAlbot?startgroup=true",)],
-
+        [
+            InlineKeyboardButton(
+                text=_["CLOSE_BUTTON"],
+                callback_data=f"forceclose {videoid}|{user_id}",
+            ),
+        ],
     ]
     return buttons
 
@@ -137,8 +115,12 @@ def livestream_markup(_, videoid, user_id, mode, channel, fplay):
                 callback_data=f"LiveStream {videoid}|{user_id}|{mode}|{channel}|{fplay}",
             ),
         ],
-        [InlineKeyboardButton(text=_["S_B_1"], url=f"https://t.me/SpotifyxAlbot?startgroup=true",)],
-
+        [
+            InlineKeyboardButton(
+                text=_["CLOSE_BUTTON"],
+                callback_data=f"forceclose {videoid}|{user_id}",
+            ),
+        ],
     ]
     return buttons
 
