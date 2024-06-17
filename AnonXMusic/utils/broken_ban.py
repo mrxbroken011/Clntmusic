@@ -1,5 +1,5 @@
 from pyrogram import filters
-from AnonXMusic.utils.admin_check import admin_check
+from AnonXMusic.utils.admin_filter import admin_filter
 
 
 USE_AS_BOT = True
