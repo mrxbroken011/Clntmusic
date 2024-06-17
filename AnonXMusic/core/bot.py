@@ -8,7 +8,7 @@ from ..logging import LOGGER
 
 class Anony(Client):
     def __init__(self):
-        LOGGER("innologger").info(f"Starting Bot...")
+        LOGGER(_name_).info(f"Starting Bot...")
         super().__init__(
             name="innologger",
             api_id=config.API_ID,
@@ -32,23 +32,23 @@ class Anony(Client):
                 text=f"<u><b>» {self.mention} ʙᴏᴛ sᴛᴀʀᴛᴇᴅ :</b><u>\n\nɪᴅ : <code>{self.id}</code>\nɴᴀᴍᴇ : {self.name}\nᴜsᴇʀɴᴀᴍᴇ : @{self.username}",
             )
         except (errors.ChannelInvalid, errors.PeerIdInvalid):
-            LOGGER("innologger").error(
+            LOGGER(_name_).error(
                 "Bot has failed to access the log group/channel. Make sure that you have added your bot to your log group/channel."
             )
             exit()
         except Exception as ex:
-            LOGGER("innologger").error(
+            LOGGER(_name_).error(
                 f"Bot has failed to access the log group/channel.\n  Reason : {type(ex).__name__}."
             )
             exit()
 
         a = await self.get_chat_member(config.LOGGER_ID, self.id)
         if a.status != ChatMemberStatus.ADMINISTRATOR:
-            LOGGER("innologger").error(
+            LOGGER(_name_).error(
                 "Please promote your bot as an admin in your log group/channel."
             )
             exit()
-        LOGGER("innologger").info(f"Music Bot Started as {self.name}")
+        LOGGER(_name_).info(f"Music Bot Started as {self.name}")
 
     async def stop(self):
         await super().stop()
